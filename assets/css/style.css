@@ -1,0 +1,180 @@
+body{
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#timer{
+	font-size:100px;
+	margin-top: 20px;
+	color: #404040;
+}
+
+#container{
+	justify-content: center;
+	align-items: center;
+	width:200px;
+	height: 305px;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	text-align: center;
+	position: relative;
+}
+
+#hourglass{
+	position: absolute;
+	width:200px;
+	height:305px;
+	background-image: url(../images/hourglass.png) ;
+	z-index: 10;
+}
+#sand{
+	position: absolute;
+	width:230px;
+	height: 2px;
+	background-color: blue;
+	opacity: .4;
+	z-index:0;
+	bottom: 45px;
+	bottom:0;
+}
+
+/*----------------------buttons-----------------------*/
+
+#play{
+	background-color: transparent;
+	outline:none;
+	border:none;
+	background-image: url(../images/play.png);
+	width: 70px;
+	height: 70px;
+	z-index: 1;
+	transition: all 0.2s ease-in-out 0s;
+}
+#play:hover{
+	
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	transition: all 0.2s ease-in-out 0s;
+}
+
+#pause{
+	background-color: transparent;
+	outline:none;
+	border:none;
+	background-image: url(../images/pause.png);
+	width: 70px;
+	height: 70px;
+	transition: all 0.2s ease-in-out 0s;
+}
+#pause:hover{
+	
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	transition: all 0.2s ease-in-out 0s;
+}
+
+#reset{
+	background-color: transparent;
+	outline:none;
+	border:none;
+	background-image: url(../images/reset.png);
+	width: 70px;
+	height: 70px;
+	transition: all 0.2s ease-in-out 0s;
+}
+#reset:hover{
+	
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+#options{
+	background-color: transparent;
+	outline:none;
+	border:none;
+	background-image: url(../images/options.png);
+	width: 70px;
+	height: 70px;
+}
+
+#sound{
+	background-color: transparent;
+	outline:none;
+	border:none;
+	background-image: url(../images/sound.png);
+	width: 70px;
+	height: 70px;
+}
+
+/*font-family: 'Amatic SC', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+.buttons{
+	width: 210px;
+	margin-top: 10px;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/*---------------------Menu------------------*/
+
+img{
+	bottom: 0;
+	transform: scale(.6);
+}
+
+li{
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	display: flex;
+	font-size:30px;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	position: absolute;
+	z-index: 50;
+	width: 200px;
+	height: 383px;
+	top:150px;
+	background-color: white;
+	border: 1px solid black;
+
+}
+.cross{
+	
+	width: 19px;
+	height:18px;
+	background-image: url(../images/cross.png);
+	top:10px;
+	right: 10px;
+	position:absolute;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition:         transform .8s ease-in-out;
+}
+img{
+	
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition:         transform .8s ease-in-out;
+}
+
+.cross:hover{
+	
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	transition: all 0.3s ease-in-out 0s;
+}
